@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "xyz.mijack.csdn.blog"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'it.neokree:MaterialNavigationDrawer:1.3.3'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.github.dexafree:materiallist:2.4.3'
+    compile 'com.android.support:palette-v7:22.0.0'
+    //5.0¶Ô»°¿ò
+    compile 'com.r0adkll:postoffice:1.1.9'
+    //5.0 Toast
+    compile 'com.github.mrengineer13:snackbar:1.1.0'
+
+}

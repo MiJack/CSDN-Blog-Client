@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/material_spacing"
+    android:paddingRight="@dimen/material_spacing"
+    android:paddingTop="@dimen/default_margin"
+    android:paddingBottom="@dimen/default_margin"
+
+    android:textSize="18sp"
+    android:textColor="@color/primary_text_default_material_light"
+    /><!-- From: file:/Users/r0adkll/Documents/Developer/Android%20Projects/PostOffice/library/src/main/res/layout/simple_listitem_mtrl_light.xml --><!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/layout/simple_listitem_mtrl_light.xml -->

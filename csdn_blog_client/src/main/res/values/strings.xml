@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CSDN博客</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="app_settings">\t\t\t设置</string>
+    <string name="app_about">\t\t\t关于</string>
+
+
+    <!--博客分类-->
+    <string name="blog_category">"博客分类"</string>
+    <string name="category_mobile">移动开发</string>
+    <string name="category_web">Web前端</string>
+    <string name="category_enterprise">架构设计</string>
+    <string name="category_code">编程语言</string>
+    <string name="category_www">互联网</string>
+    <string name="category_database">数据库</string>
+    <string name="category_system">系统运维</string>
+    <string name="category_cloud">云计算</string>
+    <string name="category_software">研发管理</string>
+    <string name="category_other">综合</string>
+
+    <string name="gmail_address">mijackstudio@gmail.com</string>
+    <string name="author">袁宇杰(Mi&amp;Jack)</string>
+    <string name="github">GitHub:\tgithub.com/MiJack</string>
+    <string name="application">应用</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

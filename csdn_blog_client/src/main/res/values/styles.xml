@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MaterialNavigationDrawerTheme.Light.DarkActionBar.TranslucentKitKatStatusBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimaryDark">#558b2f</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AppTheme.StatusBar" parent="AppTheme">
+        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimaryDark">#558b2f</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+
+        <item name="android:activityOpenExitAnimation">@anim/anim_holder</item>
+
+        <item name="android:activityCloseEnterAnimation">@anim/anim_holder</item>
+
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_bottom</item>
+
+    </style>
+
+
+</resources>
