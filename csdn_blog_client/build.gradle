@@ -27,9 +27,19 @@ dependencies {
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.github.dexafree:materiallist:2.4.3'
     compile 'com.android.support:palette-v7:22.0.0'
-    //5.0∂‘ª∞øÚ
+    //RippleView
+    compile 'com.github.traex.rippleeffect:library:1.2.4'
+    //5.0ÂØπËØùÊ°Ü
     compile 'com.r0adkll:postoffice:1.1.9'
     //5.0 Toast
-    compile 'com.github.mrengineer13:snackbar:1.1.0'
+    // compile 'com.github.mrengineer13:snackbar:1.1.0'
+    compile 'com.github.kennyc1012:snackbar:1.1-SNAPSHOT:api11Release@aar'
+    //ORM
+    compile 'org.litepal.android:core:1.2.0'
+
+    compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    compile 'org.jsoup:jsoup:1.7.2'
+    compile 'com.github.wangjiegulu:AndroidBucket:1.0.1'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
 
 }

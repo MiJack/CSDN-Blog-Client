@@ -387,4 +387,8 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/1.1.0/res/values-v11/values.xml -->
+    <eat-comment/>
+    <style name="SPB" parent="android:Widget.Holo.ProgressBar.Horizontal">
+    </style>
 </resources>

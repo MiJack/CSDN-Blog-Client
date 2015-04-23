@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
@@ -15,13 +16,13 @@ import it.neokree.materialnavigationdrawer.elements.MaterialAccount;
 import it.neokree.materialnavigationdrawer.elements.MaterialSection;
 import it.neokree.materialnavigationdrawer.elements.listeners.MaterialSectionListener;
 import xyz.mijack.csdn.blog.R;
-import xyz.mijack.csdn.blog.fragment.TextFragment;
+import xyz.mijack.csdn.blog.fragment.BlogListFragment;
 import xyz.mijack.csdn.blog.model.CategoryList;
 import xyz.mijack.csdn.blog.model.Order;
 
 
 public class MainActivity extends MaterialNavigationDrawer implements RadioGroup.OnCheckedChangeListener {
-    TextFragment fragment;
+    BlogListFragment fragment;
     RadioGroup radioGroup;
     MaterialSectionListener intentListener = new MaterialSectionListener() {
         @Override
@@ -53,7 +54,7 @@ public class MainActivity extends MaterialNavigationDrawer implements RadioGroup
         radioGroup.setLayoutParams(lp);
         getToolbar().addView(radioGroup);
         radioGroup.setOnCheckedChangeListener(this);
-        fragment = new TextFragment();
+        fragment = new BlogListFragment();
         // add account
         MaterialAccount account =
                 new MaterialAccount(this.getResources(),
@@ -62,9 +63,7 @@ public class MainActivity extends MaterialNavigationDrawer implements RadioGroup
         addAccount(account);
         MaterialSection accountSection = newSection(getString(R.string.github), this);
         addAccountSection(accountSection);
-
         addSubheader(getString(R.string.blog_category));
-
         MaterialSection section = newSection(getString(R.string.category_mobile), fragment);
         section.setSectionColor(getResources().getColor(R.color.select_color));
         section.setOnClickListener(categoryListener);
@@ -86,10 +85,13 @@ public class MainActivity extends MaterialNavigationDrawer implements RadioGroup
         MaterialSection aboutSection = newSection(getString(R.string.app_about), new Intent(this, AboutActivity.class));
         aboutSection.setOnClickListener(intentListener);
         addSection(aboutSection);
-
-
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        closeDrawer();
+    }
 
     public MaterialSection buildSection(int string, MaterialSectionListener listener) {
         final MaterialSection section = new MaterialSection(this, 0, true, 2);
@@ -105,5 +107,14 @@ public class MainActivity extends MaterialNavigationDrawer implements RadioGroup
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         Order o = checkedId == R.id.hotButton ? Order.index : Order.newest;
         fragment.changeOrder(o);
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (event.getAction() == KeyEvent.KEYCODE_BACK) {
+            DebugLog.d("onKeyDown");
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

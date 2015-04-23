@@ -2,8 +2,8 @@
     <string name="app_name">CSDN博客</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="app_settings">\t\t\t设置</string>
-    <string name="app_about">\t\t\t关于</string>
+    <string name="app_settings">设置</string>
+    <string name="app_about">关于</string>
 
 
     <!--博客分类-->
@@ -19,11 +19,16 @@
     <string name="category_software">研发管理</string>
     <string name="category_other">综合</string>
 
+    <string name="example_content">轻开平台（WebEasy）提供了简便的字符串操作功能，写法类似于(计算表达式)书包取值表达式...</string>
+    <string name="example_title">轻开平台（原WebEasy）字符串计算</string>
+
     <string name="gmail_address">mijackstudio@gmail.com</string>
     <string name="author">袁宇杰(Mi&amp;Jack)</string>
     <string name="github">GitHub:\tgithub.com/MiJack</string>
     <string name="application">应用</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="snack_ok">知道了</string>
+    <string name="load_complete">更新完成</string>
 
 </resources>

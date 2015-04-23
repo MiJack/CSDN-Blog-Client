@@ -8,4 +8,4 @@ code-version:1
 
 ##License
 
--	Apache License 2.0 - [LICENSE](LICENSE.md)
+-	Apache License 2.0 - [LICENSE](License.md)

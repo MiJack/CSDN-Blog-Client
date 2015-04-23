@@ -369,4 +369,8 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/1.1.0/res/values-v21/values.xml -->
+    <eat-comment/>
+    <style name="SPB" parent="android:Widget.Material.ProgressBar.Horizontal">
+    </style>
 </resources>
