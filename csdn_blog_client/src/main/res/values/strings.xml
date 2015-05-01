@@ -30,5 +30,6 @@
     <string name="action_settings">Settings</string>
     <string name="snack_ok">知道了</string>
     <string name="load_complete">更新完成</string>
+    <string name="title_activity_author">AuthorActivity</string>
 
 </resources>

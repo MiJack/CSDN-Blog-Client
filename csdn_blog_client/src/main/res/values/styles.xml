@@ -32,4 +32,16 @@
         <item name="spb_mirror_mode">true</item>
         <item name="spb_reversed">true</item>
     </style>
+
+    <style name="StyleRadioButton">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/radio_button_background_color</item>
+    </style>
 </resources>

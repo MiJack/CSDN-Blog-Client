@@ -71,8 +71,7 @@ public class SettingActivity extends PreferenceActivity {
             //
             // http://developer.android.com/design/patterns/navigation.html#up-vs-back
             //
-            // TODO: If Settings has multiple levels, Up should navigate up
-            // that hierarchy.
+             // that hierarchy.
             NavUtils.navigateUpFromSameTask(this);
             return true;
         }

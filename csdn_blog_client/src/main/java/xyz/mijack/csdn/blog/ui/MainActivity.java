@@ -2,12 +2,7 @@ package xyz.mijack.csdn.blog.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.RadioGroup;
 
 import com.mustafaferhan.debuglog.DebugLog;
 
@@ -18,12 +13,10 @@ import it.neokree.materialnavigationdrawer.elements.listeners.MaterialSectionLis
 import xyz.mijack.csdn.blog.R;
 import xyz.mijack.csdn.blog.fragment.BlogListFragment;
 import xyz.mijack.csdn.blog.model.CategoryList;
-import xyz.mijack.csdn.blog.model.Order;
 
 
-public class MainActivity extends MaterialNavigationDrawer implements RadioGroup.OnCheckedChangeListener {
+public class MainActivity extends MaterialNavigationDrawer {
     BlogListFragment fragment;
-    RadioGroup radioGroup;
     MaterialSectionListener intentListener = new MaterialSectionListener() {
         @Override
         public void onClick(MaterialSection materialSection) {
@@ -38,22 +31,21 @@ public class MainActivity extends MaterialNavigationDrawer implements RadioGroup
             MainActivity.this.onClick(section);
             //后续处理
             DebugLog.i(section.getTitle());
-            if (fragment.changeCategory(CategoryList.getCategoryByString(MainActivity.this, section.getTitle()))) {
-                getToolbar().setTitle(section.getTitle());
-                radioGroup.check(R.id.hotButton);
-            }
+            fragment.changeCategory
+                    (CategoryList.getCategoryByString
+                            (MainActivity.this, section.getTitle()));
+            getToolbar().setTitle(section.getTitle());
         }
     };
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        closeDrawer();
+    }
+
+    @Override
     public void init(Bundle savedInstanceState) {
-        radioGroup = (RadioGroup) LayoutInflater.from(this).inflate(R.layout.layout_radio_group, null);
-        Toolbar.LayoutParams lp =
-                new Toolbar.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        lp.gravity = Gravity.RIGHT;
-        radioGroup.setLayoutParams(lp);
-        getToolbar().addView(radioGroup);
-        radioGroup.setOnCheckedChangeListener(this);
         fragment = new BlogListFragment();
         // add account
         MaterialAccount account =
@@ -87,11 +79,6 @@ public class MainActivity extends MaterialNavigationDrawer implements RadioGroup
         addSection(aboutSection);
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        closeDrawer();
-    }
 
     public MaterialSection buildSection(int string, MaterialSectionListener listener) {
         final MaterialSection section = new MaterialSection(this, 0, true, 2);
@@ -103,18 +90,22 @@ public class MainActivity extends MaterialNavigationDrawer implements RadioGroup
         return section;
     }
 
-    @Override
-    public void onCheckedChanged(RadioGroup group, int checkedId) {
-        Order o = checkedId == R.id.hotButton ? Order.index : Order.newest;
-        fragment.changeOrder(o);
-    }
+//    @Override
+//    public void onCheckedChanged(RadioGroup group, int checkedId) {
+//        Order o = checkedId == R.id.hotButton ? Order.index : Order.newest;
+//        fragment.changeOrder(o);
+//    }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (event.getAction() == KeyEvent.KEYCODE_BACK) {
+            if (isDrawerOpen()) {
+                closeDrawer();
+            }
             DebugLog.d("onKeyDown");
             return true;
         }
         return super.onKeyDown(keyCode, event);
     }
+
 }
