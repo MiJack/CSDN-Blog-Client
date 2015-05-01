@@ -37,7 +37,21 @@
             android:launchMode="singleTask" />
         <activity
             android:name="xyz.mijack.csdn.blog.ui.BlogActivity"
+            android:parentActivityName="xyz.mijack.csdn.blog.ui.MainActivity"
+            android:theme="@style/Theme.TranslucentStatusBar"
             android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="xyz.mijack.csdn.blog.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="xyz.mijack.csdn.blog.ui.AuthorActivity"
+            android:label="@string/title_activity_author"
+            android:parentActivityName="xyz.mijack.csdn.blog.ui.MainActivity"
+            android:theme="@style/Theme.TranslucentStatusBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="xyz.mijack.csdn.blog.ui.MainActivity" />
         </activity>
         <activity
             android:name="android.support.v7.widget.TestActivity"

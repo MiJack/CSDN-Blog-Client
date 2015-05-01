@@ -2,6 +2,7 @@ package xyz.mijack.csdn.blog.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
 
 import com.mustafaferhan.debuglog.DebugLog;
@@ -47,7 +48,6 @@ public class MainActivity extends MaterialNavigationDrawer {
     @Override
     public void init(Bundle savedInstanceState) {
         fragment = new BlogListFragment();
-        // add account
         MaterialAccount account =
                 new MaterialAccount(this.getResources(),
                         getString(R.string.author), getString(R.string.gmail_address),
@@ -89,12 +89,6 @@ public class MainActivity extends MaterialNavigationDrawer {
         }
         return section;
     }
-
-//    @Override
-//    public void onCheckedChanged(RadioGroup group, int checkedId) {
-//        Order o = checkedId == R.id.hotButton ? Order.index : Order.newest;
-//        fragment.changeOrder(o);
-//    }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

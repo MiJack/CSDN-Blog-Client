@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="longAnimTime">1000</integer>
-    <integer name="rippleDuration">600</integer>
-    <integer name="zoomDuration">600</integer>
+    <integer name="rippleDuration">150</integer>
+    <integer name="zoomDuration">150</integer>
 </resources>

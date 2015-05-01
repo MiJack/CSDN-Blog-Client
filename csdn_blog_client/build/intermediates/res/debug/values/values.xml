@@ -41,6 +41,54 @@
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.3.1/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="color" name="md_background_color"/>
+    <attr format="reference" name="md_btn_negative_selector"/>
+    <attr format="reference" name="md_btn_neutral_selector"/>
+    <attr format="reference" name="md_btn_positive_selector"/>
+    <attr format="reference" name="md_btn_stacked_selector"/>
+    <attr format="enum" name="md_btnstacked_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
+    <attr format="enum" name="md_buttons_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
+    <attr format="color" name="md_content_color"/>
+    <attr format="enum" name="md_content_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
+    <attr format="boolean" name="md_dark_theme"/>
+    <attr format="color" name="md_divider"/>
+    <attr format="color" name="md_divider_color"/>
+    <attr format="reference" name="md_icon"/>
+    <attr format="boolean" name="md_icon_limit_icon_to_default_size"/>
+    <attr format="dimension" name="md_icon_max_size"/>
+    <attr format="color" name="md_item_color"/>
+    <attr format="enum" name="md_items_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
+    <attr format="reference" name="md_list_selector"/>
+    <attr format="string" name="md_medium_font"/>
+    <attr format="color" name="md_negative_color"/>
+    <attr format="color" name="md_neutral_color"/>
+    <attr format="color" name="md_positive_color"/>
+    <attr format="string" name="md_regular_font"/>
+    <attr format="color" name="md_title_color"/>
+    <attr format="enum" name="md_title_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
+    <attr format="color" name="md_widget_color"/>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.kennyc1012/snackbar/1.1-SNAPSHOT/api11Release/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="snack_bar_background_color"/>
@@ -158,9 +206,9 @@
     <color name="cardview_shadow_start_color">#37000000</color>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="colorAccent">#FFFFFF</color>
-    <color name="colorPrimary">@color/material_design_color_lightblue_500</color>
-    <color name="colorPrimaryDark">@color/material_design_color_blue_800</color>
+    <color name="colorAccent">#ffe7e7e7</color>
+    <color name="colorPrimary">#ff00bbd3</color>
+    <color name="colorPrimaryDark">#ff0096a9</color>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
     <eat-comment/>
     <color name="cyan_100">#b2ebf2</color>
@@ -597,6 +645,17 @@
     <color name="material_light_dialog_button_primary_default">@android:color/holo_blue_light</color>
     <color name="material_light_dialog_message">#000000</color>
     <color name="material_light_dialog_title">#3C3C3D</color>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.3.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="md_btn_selected">#33969696</color>
+    <color name="md_btn_selected_dark">#40CBCBCB</color>
+    <color name="md_divider_black">#10000000</color>
+    <color name="md_divider_white">#10FFFFFF</color>
+    <color name="md_edittext_error">#DD2C00</color>
+    <color name="md_material_blue_600">#1E88E5</color>
+    <color name="md_material_blue_800">#1565C0</color>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
+    <eat-comment/>
     <color name="orange_100">#ffe0b2</color>
     <color name="orange_200">#ffcc80</color>
     <color name="orange_300">#ffb74d</color>
@@ -770,9 +829,12 @@
     <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
     <declare-styleable name="ColorFilterImageButton"><attr format="float" name="filterRedVector"/><attr format="float" name="filterGreenVector"/><attr format="float" name="filterBlueVector"/><attr format="float" name="filterAlphaVector"/><attr format="float" name="filterBrightnessVector"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="topBottomBarArrowSize"/><attr format="dimension" name="middleBarArrowSize"/><attr format="dimension" name="barSize"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="FloatingActionButton"><attr format="color" name="fab_colorNormal"/><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorRipple"/><attr format="boolean" name="fab_showShadow"/><attr format="color" name="fab_shadowColor"/><attr format="dimension" name="fab_shadowRadius"/><attr format="dimension" name="fab_shadowXOffset"/><attr format="dimension" name="fab_shadowYOffset"/><attr format="enum" name="fab_size"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr format="reference" name="fab_showAnimation"/><attr format="reference" name="fab_hideAnimation"/><attr format="string" name="fab_label"/><attr format="dimension" name="fab_elevationCompat"/></declare-styleable>
+    <declare-styleable name="FloatingActionMenu"><attr format="boolean" name="menu_showShadow"/><attr format="dimension" name="menu_buttonSpacing"/><attr format="dimension" name="menu_labels_margin"/><attr format="reference" name="menu_labels_showAnimation"/><attr format="reference" name="menu_labels_hideAnimation"/><attr format="dimension" name="menu_labels_paddingTop"/><attr format="dimension" name="menu_labels_paddingLeft"/><attr format="dimension" name="menu_labels_paddingRight"/><attr format="dimension" name="menu_labels_paddingBottom"/><attr format="dimension" name="menu_labels_padding"/><attr format="color" name="menu_labels_textColor"/><attr format="dimension" name="menu_labels_textSize"/><attr format="dimension" name="menu_labels_cornerRadius"/><attr format="boolean" name="menu_labels_showShadow"/><attr format="color" name="menu_labels_colorNormal"/><attr format="color" name="menu_labels_colorPressed"/><attr format="color" name="menu_labels_colorRipple"/><attr format="reference" name="menu_icon"/><attr format="integer" name="menu_animationDelayPerItem"/><attr format="reference" name="menu_buttonToggleAnimation"/><attr format="boolean" name="menu_labels_singleLine"/><attr format="enum" name="menu_labels_ellipsize"><enum name="none" value="0"/><enum name="start" value="1"/><enum name="middle" value="2"/><enum name="end" value="3"/><enum name="marquee" value="4"/></attr><attr format="integer" name="menu_labels_maxLines"/><attr format="enum" name="menu_fab_size"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr format="reference" name="menu_labels_style"/><attr format="color" name="menu_shadowColor"/><attr format="dimension" name="menu_shadowRadius"/><attr format="dimension" name="menu_shadowXOffset"/><attr format="dimension" name="menu_shadowYOffset"/><attr format="color" name="menu_colorNormal"/><attr format="color" name="menu_colorPressed"/><attr format="color" name="menu_colorRipple"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
+    <declare-styleable name="MDRootLayout"><attr format="boolean" name="md_reduce_padding_no_title_no_buttons"/></declare-styleable>
     <declare-styleable name="MaterialAccount"><attr format="color" name="titleColor"/><attr format="color" name="subtitleColor"/></declare-styleable>
     <declare-styleable name="MaterialListView"><attr format="integer" name="column_count"/><attr format="integer" name="column_count_portrait"/><attr format="integer" name="column_count_landscape"/></declare-styleable>
     <declare-styleable name="MaterialNavigationDrawer"><attr format="boolean" name="rippleBackport"/><attr format="integer" name="drawerType"/><attr format="boolean" name="uniqueToolbarColor"/><attr format="boolean" name="singleAccount"/><attr format="boolean" name="multipaneSupport"/><attr format="color" name="drawerColor"/><attr format="reference" name="sectionStyle"/><attr format="reference" name="subheaderStyle"/><attr format="reference" name="accountStyle"/><attr format="boolean" name="learningPattern"/><attr format="integer" name="defaultSectionLoaded"/><attr format="boolean" name="toolbarElevation"/></declare-styleable>
@@ -896,9 +958,21 @@
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/it.neokree/MaterialNavigationDrawer/1.3.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="drawerWidth">-1dp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.clans/fab/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_size_normal">56dp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="flexible_space_height">72dp</dimen>
+    <dimen name="flexible_space_image_height">240dp</dimen>
+    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.dexafree/materiallist/2.4.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="floating_button_size">40dp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.clans/fab/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="labels_text_size">14sp</dimen>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
     <eat-comment/>
     <dimen name="material_button_height">36dp</dimen>
@@ -908,7 +982,44 @@
     <dimen name="material_message">16sp</dimen>
     <dimen name="material_spacing">24dp</dimen>
     <dimen name="material_title">20sp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.3.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="md_action_corner_radius">2dp</dimen>
+    <dimen name="md_button_frame_vertical_padding">8dp</dimen>
+    <dimen name="md_button_height">48dp</dimen>
+    <dimen name="md_button_inset_horizontal">4dp</dimen>
+    <dimen name="md_button_inset_vertical">6dp</dimen>
+    <dimen name="md_button_min_width">72dp</dimen>
+    <dimen name="md_button_padding_frame_side">12dp</dimen>
+    <dimen name="md_button_padding_horizontal">8dp</dimen>
+    <dimen name="md_button_padding_horizontal_internalexternal">32dp</dimen>
+    <dimen name="md_button_padding_vertical">4dp</dimen>
+    <dimen name="md_button_textpadding_horizontal">1dp</dimen>
+    <dimen name="md_button_textsize">14sp</dimen>
+    <dimen name="md_content_padding_bottom">8dp</dimen>
+    <dimen name="md_content_padding_top">8dp</dimen>
+    <dimen name="md_content_textsize">16sp</dimen>
+    <dimen name="md_dialog_frame_margin">24dp</dimen>
+    <dimen name="md_divider_height">1dp</dimen>
+    <dimen name="md_icon_margin">16dp</dimen>
+    <dimen name="md_icon_max_size">48dp</dimen>
+    <dimen name="md_listitem_control_margin">6dp</dimen>
+    <dimen name="md_listitem_height">48dp</dimen>
+    <dimen name="md_listitem_margin_left">24dp</dimen>
+    <dimen name="md_listitem_textsize">16sp</dimen>
+    <dimen name="md_neutral_button_margin">12dp</dimen>
+    <dimen name="md_notitle_vertical_padding">16dp</dimen>
+    <dimen name="md_simplelist_icon">40dp</dimen>
+    <dimen name="md_simplelist_icon_margin">16dp</dimen>
+    <dimen name="md_simplelistitem_padding_top">8dp</dimen>
+    <dimen name="md_title_frame_margin_bottom">12dp</dimen>
+    <dimen name="md_title_textsize">20sp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
+    <eat-comment/>
     <dimen name="minimum_dialog_width">300dp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="parallax_image_height">180dp</dimen>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/it.neokree/MaterialNavigationDrawer/1.3.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="photoMarginTop">16dp</dimen>
@@ -951,6 +1062,11 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.clans/fab/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="fab_label" type="id"/>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="home" type="id"/>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.wangjiegulu/AndroidBucket/1.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -984,7 +1100,7 @@
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/integers.xml -->
     <eat-comment/>
     <integer name="longAnimTime">1000</integer>
-    <integer name="rippleDuration">600</integer>
+    <integer name="rippleDuration">150</integer>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
     <eat-comment/>
     <integer name="ripple_duration">150</integer>
@@ -999,7 +1115,7 @@
     <integer name="spb_default_sections_count">4</integer>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/integers.xml -->
     <eat-comment/>
-    <integer name="zoomDuration">600</integer>
+    <integer name="zoomDuration">150</integer>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
     <eat-comment/>
     <integer name="zoom_duration">150</integer>
@@ -1041,6 +1157,7 @@
     <string name="category_system">系统运维</string>
     <string name="category_web">Web前端</string>
     <string name="category_www">互联网</string>
+    <string name="choose_browser">选择打开的浏览器</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
     <eat-comment/>
     <string name="define_PostOffice"/>
@@ -1080,9 +1197,14 @@
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="load_complete">更新完成</string>
+    <string name="loading">正在加载中...</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/it.neokree/MaterialNavigationDrawer/1.3.3/res/values/values.xml -->
     <eat-comment/>
     <string name="nothing"/>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="open_with_browser">在浏览器打开</string>
+    <string name="open_with_browser_content">请选择打开网站的方式</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings_activity_setting.xml -->
     <eat-comment/>
     <string name="pref_default_display_name">John Smith</string>
@@ -1103,6 +1225,7 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="share">分享</string>
     <string name="snack_ok">知道了</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library/1.1.0/res/values/values.xml -->
     <eat-comment/>
@@ -1113,9 +1236,19 @@
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_author">个人主页</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings_activity_setting.xml -->
     <eat-comment/>
     <string name="title_activity_setting">设置</string>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="use_mobile_url">打开移动版</string>
+    <string name="use_pc_url">打开电脑版</string>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ActionBatStyle" parent="Base.Widget.AppCompat.Light.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
@@ -1125,24 +1258,21 @@
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style mce_bogus="1" name="AnimationActivity" parent="@android:style/Animation.Activity">
-
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
-
         <item name="android:activityOpenExitAnimation">@anim/anim_holder</item>
-
         <item name="android:activityCloseEnterAnimation">@anim/anim_holder</item>
-
         <item name="android:activityCloseExitAnimation">@anim/slide_out_bottom</item>
-
     </style>
     <style name="AppTheme" parent="MaterialNavigationDrawerTheme.Light.DarkActionBar.TranslucentKitKatStatusBar">
         <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/black</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:actionBarStyle">@style/ActionBatStyle</item>
     </style>
-    <style name="AppTheme.StatusBar" parent="AppTheme"/>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
@@ -2097,6 +2227,15 @@
     </style>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="DialogWindowTitle.Sphinx" parent="@style/DialogWindowTitle_Holo">
+        <item name="android:textAppearance">@style/TextAppearance.Sphinx.DialogWindowTitle</item>
+    </style>
+    <style name="DialogWindowTitle_Holo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.DialogWindowTitle
+        </item>
+    </style>
     <style name="GPlusProgressBar" parent="SmoothProgressBar">
         <item name="spb_stroke_separator_length">12dp</item>
         <item name="spb_sections_count">4</item>
@@ -2133,6 +2272,60 @@
         <!--动画样式-->
         <item name="android:backgroundDimEnabled" ns1:ignore="NewApi">false</item>
         <!--背景是否模糊-->
+    </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.3.1/res/values/values.xml -->
+    <eat-comment/>
+    <style name="MD_ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/md_button_height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="MD_ActionButton.Text" ns1:ignore="NewApi">
+        <item name="android:textSize">@dimen/md_button_textsize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:minWidth">@dimen/md_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/md_button_textpadding_horizontal</item>
+        <item name="android:paddingRight">@dimen/md_button_textpadding_horizontal</item>
+    </style>
+    <style name="MD_ActionButtonStacked" ns1:ignore="NewApi" parent="@style/MD_ActionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/md_button_padding_horizontal_internalexternal</item>
+        <item name="android:paddingStart">@dimen/md_button_padding_horizontal_internalexternal
+        </item>
+        <item name="android:paddingRight">@dimen/md_button_padding_horizontal_internalexternal
+        </item>
+        <item name="android:paddingEnd">@dimen/md_button_padding_horizontal_internalexternal</item>
+    </style>
+    <style name="MD_Dark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="md_divider">@color/md_divider_white</item>
+        <item name="md_list_selector">@drawable/md_selector_dark</item>
+        <item name="md_btn_stacked_selector">@drawable/md_selector_dark</item>
+        <item name="md_btn_positive_selector">@drawable/md_btn_selector_dark</item>
+        <item name="md_btn_neutral_selector">@drawable/md_btn_selector_dark</item>
+        <item name="md_btn_negative_selector">@drawable/md_btn_selector_dark</item>
+
+        <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="MD_Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="md_divider">@color/md_divider_black</item>
+        <item name="md_list_selector">@drawable/md_selector</item>
+        <item name="md_btn_stacked_selector">@drawable/md_selector</item>
+        <item name="md_btn_positive_selector">@drawable/md_btn_selector</item>
+        <item name="md_btn_neutral_selector">@drawable/md_btn_selector</item>
+        <item name="md_btn_negative_selector">@drawable/md_btn_selector</item>
+
+        <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="MD_WindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
     </style>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.dexafree/materiallist/2.4.3/res/values/values.xml -->
     <eat-comment/>
@@ -2220,6 +2413,15 @@
     </style>
     <style name="MaterialSubheaderTheme.Light">
         <item name="subheaderTitleColor">#000</item>
+    </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
     </style>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.dexafree/materiallist/2.4.3/res/values/values.xml -->
     <eat-comment/>
@@ -2483,16 +2685,47 @@
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="TextAppearance.Sphinx.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textColor">@android:color/holo_green_light</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.Sphinx.Medium" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
     </style>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
     </style>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Title" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
     </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="TextAppearance_Dialog_Medium" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="Theme.AppCompat" parent="Base.Theme.AppCompat"/>
     <style name="Theme.AppCompat.CompactMenu" parent="Base.Theme.AppCompat.CompactMenu"/>
     <style name="Theme.AppCompat.Dialog" parent="Base.Theme.AppCompat.Dialog"/>
     <style name="Theme.AppCompat.Dialog.Alert" parent="Base.Theme.AppCompat.Dialog.Alert"/>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.AppCompat.Dialog.Alert.Material">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">#ff585758</item>
+        <item name="android:textColorPrimary">#ff585758</item>
+        <item name="android:textColorSecondary">#ff585758</item>
+        <item name="alertDialogCenterButtons">true</item>
+    </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="Theme.AppCompat.Dialog.MinWidth" parent="Base.Theme.AppCompat.Dialog.MinWidth"/>
     <style name="Theme.AppCompat.DialogWhenLarge" parent="Base.Theme.AppCompat.DialogWhenLarge">
     </style>
@@ -2516,6 +2749,21 @@
     <style name="Theme.SmoothProgressBarDefaults" parent="android:Theme">
         <item name="spbStyle">@style/SmoothProgressBar</item>
     </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Sphinx" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/Widget.Sphinx.ActionBar.Solid</item>
+        <item name="android:alertDialogTheme">@style/Theme_Sphinx_Dialog_Alert</item>
+    </style>
+    <style name="Theme.TranslucentStatusBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="dialogTheme">@style/Theme.AppCompat.Dialog</item>
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Dialog.Alert.Material</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="actionMenuTextColor">#111</item>
+    </style>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
@@ -2523,6 +2771,34 @@
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme_Dialog_Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@android:color/holo_orange_light</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance_Dialog_Medium</item>
+    </style>
+    <style name="Theme_Holo_Dialog_Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle_Holo</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="Theme_Sphinx_Dialog_Alert" parent="@style/Theme_Holo_Dialog_Alert">
+
+
+        <item name="android:background">@color/material_design_color_grey_700</item>
+        <item name="android:textColorSecondary">@android:color/holo_orange_light</item>
+        <item name="android:textColorPrimary">@android:color/holo_orange_light</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Sphinx.Medium</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.Sphinx</item>
+    </style>
+    <style name="Toolbar" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#ff5cdfe4</item>
+    </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -2663,6 +2939,11 @@
         <item name="android:textColor">@color/material_light_dialog_title</item>
         <item name="android:alpha">.87</item>
         <item name="android:layout_margin">@dimen/material_spacing</item>
+    </style>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Widget.Sphinx.ActionBar.Solid" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">#FFA500</item>
     </style>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.wangjiegulu/AndroidBucket/1.0.1/res/values/values.xml -->
     <eat-comment/>
