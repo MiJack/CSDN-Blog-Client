@@ -1046,6 +1046,11 @@
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.dexafree/materiallist/2.4.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="subtitle_size">20sp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="tab_height">48dp</dimen>
+    <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.github.dexafree/materiallist/2.4.3/res/values/values.xml -->
+    <eat-comment/>
     <dimen name="title_size">24sp</dimen>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/it.neokree/MaterialNavigationDrawer/1.3.3/res/values/values.xml -->
     <eat-comment/>
@@ -1170,6 +1175,7 @@
     <string name="example_title">轻开平台（原WebEasy）字符串计算</string>
     <string name="github">GitHub:\tgithub.com/MiJack</string>
     <string name="gmail_address">mijackstudio@gmail.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/values/values.xml -->
     <eat-comment/>
@@ -1205,6 +1211,8 @@
     <eat-comment/>
     <string name="open_with_browser">在浏览器打开</string>
     <string name="open_with_browser_content">请选择打开网站的方式</string>
+    <string name="order_by_hot">最热</string>
+    <string name="order_by_time">最新</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings_activity_setting.xml -->
     <eat-comment/>
     <string name="pref_default_display_name">John Smith</string>
@@ -1242,6 +1250,7 @@
     <string name="title_activity_setting">设置</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_test">TestActivity</string>
     <string name="use_mobile_url">打开移动版</string>
     <string name="use_pc_url">打开电脑版</string>
     <!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/src/main/res/values/styles.xml -->
@@ -2756,6 +2765,7 @@
         <item name="android:alertDialogTheme">@style/Theme_Sphinx_Dialog_Alert</item>
     </style>
     <style name="Theme.TranslucentStatusBar" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="dialogTheme">@style/Theme.AppCompat.Dialog</item>

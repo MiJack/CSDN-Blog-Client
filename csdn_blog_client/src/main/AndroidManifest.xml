@@ -34,24 +34,20 @@
             android:parentActivityName=".ui.MainActivity"
             android:theme="@style/Theme.TranslucentStatusBar"
             android:uiOptions="splitActionBarWhenNarrow">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="xyz.mijack.csdn.blog.ui.MainActivity" />
-
         </activity>
         <activity
             android:name=".ui.AuthorActivity"
             android:label="@string/title_activity_author"
             android:parentActivityName=".ui.MainActivity"
-            android:theme="@style/Theme.TranslucentStatusBar"
-            >
-
+            android:theme="@style/Theme.TranslucentStatusBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="xyz.mijack.csdn.blog.ui.MainActivity" />
-
         </activity>
+
     </application>
 
 </manifest>

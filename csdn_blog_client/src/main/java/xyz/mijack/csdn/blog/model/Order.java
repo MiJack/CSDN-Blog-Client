@@ -4,7 +4,6 @@ package xyz.mijack.csdn.blog.model;
  * Created by MiJack on 2015/4/17.
  */
 public enum Order {
-
     index {
         public String toUrl() {
             return "index.html";

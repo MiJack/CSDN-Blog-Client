@@ -338,7 +338,7 @@ public final class R {
 		public static final int floating_button_size = 0x7f0b0058;
 		public static final int small_padding = 0x7f0b0082;
 		public static final int subtitle_size = 0x7f0b008e;
-		public static final int title_size = 0x7f0b008f;
+		public static final int title_size = 0x7f0b0090;
 	}
 	public static final class drawable {
 		public static final int abc_btn_check_material = 0x7f020003;
@@ -410,13 +410,13 @@ public final class R {
 		public static final int activity_chooser_view_content = 0x7f0c0043;
 		public static final int always = 0x7f0c0023;
 		public static final int beginning = 0x7f0c0022;
-		public static final int cardDivider = 0x7f0c00aa;
-		public static final int cardView = 0x7f0c00a7;
+		public static final int cardDivider = 0x7f0c00ae;
+		public static final int cardView = 0x7f0c00ab;
 		public static final int checkbox = 0x7f0c0055;
 		public static final int collapseActionView = 0x7f0c0024;
 		public static final int decor_content_parent = 0x7f0c005b;
 		public static final int default_activity_button = 0x7f0c0046;
-		public static final int descriptionTextView = 0x7f0c00a9;
+		public static final int descriptionTextView = 0x7f0c00ad;
 		public static final int dialog = 0x7f0c0031;
 		public static final int disableHome = 0x7f0c0018;
 		public static final int dropdown = 0x7f0c0032;
@@ -429,20 +429,20 @@ public final class R {
 		public static final int icon = 0x7f0c0048;
 		public static final int ifRoom = 0x7f0c0025;
 		public static final int image = 0x7f0c0045;
-		public static final int imageView = 0x7f0c009f;
-		public static final int left_text_button = 0x7f0c00ab;
+		public static final int imageView = 0x7f0c007b;
+		public static final int left_text_button = 0x7f0c00af;
 		public static final int listMode = 0x7f0c0015;
-		public static final int listView = 0x7f0c00ad;
+		public static final int listView = 0x7f0c00b1;
 		public static final int list_item = 0x7f0c0047;
 		public static final int middle = 0x7f0c0021;
 		public static final int never = 0x7f0c0026;
 		public static final int none = 0x7f0c001a;
 		public static final int normal = 0x7f0c0016;
-		public static final int ok_button = 0x7f0c00b0;
+		public static final int ok_button = 0x7f0c00b4;
 		public static final int progress_circular = 0x7f0c000b;
 		public static final int progress_horizontal = 0x7f0c000c;
 		public static final int radio = 0x7f0c0057;
-		public static final int right_text_button = 0x7f0c00ac;
+		public static final int right_text_button = 0x7f0c00b0;
 		public static final int search_badge = 0x7f0c0061;
 		public static final int search_bar = 0x7f0c0060;
 		public static final int search_button = 0x7f0c0062;
@@ -459,10 +459,10 @@ public final class R {
 		public static final int showTitle = 0x7f0c001d;
 		public static final int split_action_bar = 0x7f0c000e;
 		public static final int submit_area = 0x7f0c0068;
-		public static final int subtitleTextView = 0x7f0c00af;
+		public static final int subtitleTextView = 0x7f0c00b3;
 		public static final int tabMode = 0x7f0c0017;
 		public static final int title = 0x7f0c0049;
-		public static final int titleTextView = 0x7f0c00a8;
+		public static final int titleTextView = 0x7f0c00ac;
 		public static final int up = 0x7f0c000f;
 		public static final int useLogo = 0x7f0c001e;
 		public static final int withText = 0x7f0c0027;
@@ -494,14 +494,14 @@ public final class R {
 		public static final int abc_search_dropdown_item_icons_2line = 0x7f04001a;
 		public static final int abc_search_view = 0x7f04001b;
 		public static final int abc_simple_dropdown_hint = 0x7f04001d;
-		public static final int material_basic_buttons_card = 0x7f040039;
-		public static final int material_basic_image_buttons_card_layout = 0x7f04003a;
-		public static final int material_basic_list_card_layout = 0x7f04003b;
-		public static final int material_big_image_card_layout = 0x7f04003c;
-		public static final int material_image_with_buttons_card = 0x7f04003e;
-		public static final int material_small_image_card = 0x7f040040;
-		public static final int material_welcome_card_layout = 0x7f040041;
-		public static final int support_simple_spinner_dropdown_item = 0x7f040057;
+		public static final int material_basic_buttons_card = 0x7f04003e;
+		public static final int material_basic_image_buttons_card_layout = 0x7f04003f;
+		public static final int material_basic_list_card_layout = 0x7f040040;
+		public static final int material_big_image_card_layout = 0x7f040041;
+		public static final int material_image_with_buttons_card = 0x7f040043;
+		public static final int material_small_image_card = 0x7f040045;
+		public static final int material_welcome_card_layout = 0x7f040046;
+		public static final int support_simple_spinner_dropdown_item = 0x7f04005c;
 	}
 	public static final class string {
 		public static final int abc_action_bar_home_description = 0x7f0e0000;

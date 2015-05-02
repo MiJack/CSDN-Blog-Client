@@ -3,7 +3,7 @@ package xyz.mijack.csdn.blog.model;
 /**
  * Created by MiJack on 2015/4/16.
  */
-public class Category {
+public class Category  {
     private int icon;
     private int category;
     private String name;
@@ -45,6 +45,5 @@ public class Category {
         Category category = (Category) o;
         return !(name != null ? !name.equals(category.name) : category.name != null);
     }
-
 
 }

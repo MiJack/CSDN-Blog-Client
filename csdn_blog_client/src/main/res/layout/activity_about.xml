@@ -2,15 +2,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="xyz.mijack.csdn.blog.ui.AboutActivity">
 
-    <TextView
+
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AboutActivity" />
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="148dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+         android:layout_toRightOf="@+id/toggleButton"
+        android:layout_toEndOf="@+id/toggleButton"
+        android:layout_marginTop="43dp" />
 
 </RelativeLayout>

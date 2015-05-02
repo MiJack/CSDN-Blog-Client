@@ -108,15 +108,15 @@ ADDED from AndroidManifest.xml:32:9
 	android:name
 		ADDED from AndroidManifest.xml:33:13
 activity#xyz.mijack.csdn.blog.ui.AuthorActivity
-ADDED from AndroidManifest.xml:43:9
+ADDED from AndroidManifest.xml:41:9
 	android:label
-		ADDED from AndroidManifest.xml:45:13
+		ADDED from AndroidManifest.xml:43:13
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:46:13
-	android:theme
-		ADDED from AndroidManifest.xml:47:13
-	android:name
 		ADDED from AndroidManifest.xml:44:13
+	android:theme
+		ADDED from AndroidManifest.xml:45:13
+	android:name
+		ADDED from AndroidManifest.xml:42:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from it.neokree:MaterialNavigationDrawer:1.3.3:8:5

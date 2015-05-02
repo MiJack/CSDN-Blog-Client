@@ -1,6 +1,7 @@
 package xyz.mijack.csdn.blog.ui;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
@@ -13,11 +14,12 @@ import it.neokree.materialnavigationdrawer.elements.MaterialSection;
 import it.neokree.materialnavigationdrawer.elements.listeners.MaterialSectionListener;
 import xyz.mijack.csdn.blog.R;
 import xyz.mijack.csdn.blog.fragment.BlogListFragment;
+import xyz.mijack.csdn.blog.fragment.BlogPagerFragment;
 import xyz.mijack.csdn.blog.model.CategoryList;
 
 
 public class MainActivity extends MaterialNavigationDrawer {
-    BlogListFragment fragment;
+    BlogPagerFragment pagerFragment;
     MaterialSectionListener intentListener = new MaterialSectionListener() {
         @Override
         public void onClick(MaterialSection materialSection) {
@@ -26,18 +28,25 @@ public class MainActivity extends MaterialNavigationDrawer {
             closeDrawer();
         }
     };
+
     private MaterialSectionListener categoryListener = new MaterialSectionListener() {
         @Override
         public void onClick(MaterialSection section) {
-            MainActivity.this.onClick(section);
-            //后续处理
-            DebugLog.i(section.getTitle());
-            fragment.changeCategory
+            closeDrawer();
+            MaterialSection currentSection = MainActivity.this.getCurrentSection();
+            if (currentSection == section) {
+                //如果点击的是当前分类，不做处理
+                return;
+            }
+            MainActivity.this.setSection(section);
+            pagerFragment.changeCategory
                     (CategoryList.getCategoryByString
                             (MainActivity.this, section.getTitle()));
             getToolbar().setTitle(section.getTitle());
         }
     };
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,7 +56,7 @@ public class MainActivity extends MaterialNavigationDrawer {
 
     @Override
     public void init(Bundle savedInstanceState) {
-        fragment = new BlogListFragment();
+        pagerFragment = new BlogPagerFragment();
         MaterialAccount account =
                 new MaterialAccount(this.getResources(),
                         getString(R.string.author), getString(R.string.gmail_address),
@@ -56,7 +65,9 @@ public class MainActivity extends MaterialNavigationDrawer {
         MaterialSection accountSection = newSection(getString(R.string.github), this);
         addAccountSection(accountSection);
         addSubheader(getString(R.string.blog_category));
-        MaterialSection section = newSection(getString(R.string.category_mobile), fragment);
+        MaterialSection section = new MaterialSection(this, 0, true, 0).useRealColor();
+        section.setTarget(pagerFragment);
+        section.setTitle(getString(R.string.category_mobile));
         section.setSectionColor(getResources().getColor(R.color.select_color));
         section.setOnClickListener(categoryListener);
         addSection(section);
@@ -85,7 +96,7 @@ public class MainActivity extends MaterialNavigationDrawer {
         section.setTitle(getString(string));
         section.setSectionColor(getResources().getColor(R.color.select_color));
         if (listener != null) {
-            section.setOnClickListener(listener);
+            section.setTarget(listener);
         }
         return section;
     }

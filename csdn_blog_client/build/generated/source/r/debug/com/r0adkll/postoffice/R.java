@@ -336,68 +336,68 @@ public final class R {
 		public static final int background_material_light = 0x7f02003e;
 		public static final int edittext_mtrl_alpha = 0x7f020051;
 		public static final int ic_launcher = 0x7f020058;
-		public static final int material_dark_button_selector = 0x7f02005e;
-		public static final int material_light_button_selector = 0x7f02005f;
-		public static final int progress_material_horizontal = 0x7f02006e;
-		public static final int progress_mtrl_alpha = 0x7f02006f;
-		public static final int progress_primary_mtrl_alpha = 0x7f020070;
-		public static final int shape_rounded = 0x7f020077;
-		public static final int textfield_activated_mtrl_alpha = 0x7f020079;
-		public static final int textfield_default_mtrl_alpha = 0x7f02007a;
-		public static final int textfield_search_activated_mtrl_alpha = 0x7f02007b;
-		public static final int textfield_search_default_mtrl_alpha = 0x7f02007c;
+		public static final int material_dark_button_selector = 0x7f02005f;
+		public static final int material_light_button_selector = 0x7f020060;
+		public static final int progress_material_horizontal = 0x7f02006f;
+		public static final int progress_mtrl_alpha = 0x7f020070;
+		public static final int progress_primary_mtrl_alpha = 0x7f020071;
+		public static final int shape_rounded = 0x7f020078;
+		public static final int textfield_activated_mtrl_alpha = 0x7f02007a;
+		public static final int textfield_default_mtrl_alpha = 0x7f02007b;
+		public static final int textfield_search_activated_mtrl_alpha = 0x7f02007c;
+		public static final int textfield_search_default_mtrl_alpha = 0x7f02007d;
 	}
 	public static final class id {
 		public static final int alertTitle = 0x7f0c004d;
-		public static final int button_container = 0x7f0c0095;
+		public static final int button_container = 0x7f0c0099;
 		public static final int contentPanel = 0x7f0c004e;
-		public static final int content_frame = 0x7f0c0092;
+		public static final int content_frame = 0x7f0c0096;
 		public static final int customPanel = 0x7f0c0051;
 		public static final int doubleRipple = 0x7f0c0028;
 		public static final int icon = 0x7f0c0048;
-		public static final int message = 0x7f0c0091;
-		public static final int message_scrollview = 0x7f0c0093;
+		public static final int message = 0x7f0c0095;
+		public static final int message_scrollview = 0x7f0c0097;
 		public static final int parentPanel = 0x7f0c004a;
-		public static final int progress = 0x7f0c009b;
-		public static final int progress_container = 0x7f0c009a;
+		public static final int progress = 0x7f0c009f;
+		public static final int progress_container = 0x7f0c009e;
 		public static final int progress_mesage = 0x7f0c000d;
 		public static final int rectangle = 0x7f0c0029;
-		public static final int ripple_button = 0x7f0c00ae;
-		public static final int ripple_view = 0x7f0c00a1;
+		public static final int ripple_button = 0x7f0c00b2;
+		public static final int ripple_view = 0x7f0c00a5;
 		public static final int simpleRipple = 0x7f0c002a;
-		public static final int style_content = 0x7f0c0094;
+		public static final int style_content = 0x7f0c0098;
 		public static final int title = 0x7f0c0049;
-		public static final int titleDivider = 0x7f0c0090;
+		public static final int titleDivider = 0x7f0c0094;
 		public static final int title_template = 0x7f0c004c;
 		public static final int topPanel = 0x7f0c004b;
-		public static final int total = 0x7f0c009c;
+		public static final int total = 0x7f0c00a0;
 	}
 	public static final class integer {
 		public static final int ripple_duration = 0x7f0d0009;
 		public static final int zoom_duration = 0x7f0d0010;
 	}
 	public static final class layout {
-		public static final int layout_holo_dialog = 0x7f04002a;
-		public static final int layout_material_dark_dialog = 0x7f04002b;
-		public static final int layout_material_light_dialog = 0x7f04002c;
-		public static final int layout_progress_style = 0x7f040033;
-		public static final int material_dark_dialog_button = 0x7f04003d;
-		public static final int material_light_dialog_button = 0x7f04003f;
-		public static final int simple_listitem_mtrl_dark = 0x7f040054;
-		public static final int simple_listitem_mtrl_light = 0x7f040055;
+		public static final int layout_holo_dialog = 0x7f04002e;
+		public static final int layout_material_dark_dialog = 0x7f04002f;
+		public static final int layout_material_light_dialog = 0x7f040030;
+		public static final int layout_progress_style = 0x7f040037;
+		public static final int material_dark_dialog_button = 0x7f040042;
+		public static final int material_light_dialog_button = 0x7f040044;
+		public static final int simple_listitem_mtrl_dark = 0x7f040059;
+		public static final int simple_listitem_mtrl_light = 0x7f04005a;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f0e0013;
 		public static final int define_PostOffice = 0x7f0e0023;
-		public static final int library_PostOffice_author = 0x7f0e002a;
-		public static final int library_PostOffice_authorWebsite = 0x7f0e002b;
-		public static final int library_PostOffice_isOpenSource = 0x7f0e002c;
-		public static final int library_PostOffice_libraryDescription = 0x7f0e002d;
-		public static final int library_PostOffice_libraryName = 0x7f0e002e;
-		public static final int library_PostOffice_libraryVersion = 0x7f0e002f;
-		public static final int library_PostOffice_libraryWebsite = 0x7f0e0030;
-		public static final int library_PostOffice_licenseId = 0x7f0e0031;
-		public static final int library_PostOffice_repositoryLink = 0x7f0e0032;
+		public static final int library_PostOffice_author = 0x7f0e002b;
+		public static final int library_PostOffice_authorWebsite = 0x7f0e002c;
+		public static final int library_PostOffice_isOpenSource = 0x7f0e002d;
+		public static final int library_PostOffice_libraryDescription = 0x7f0e002e;
+		public static final int library_PostOffice_libraryName = 0x7f0e002f;
+		public static final int library_PostOffice_libraryVersion = 0x7f0e0030;
+		public static final int library_PostOffice_libraryWebsite = 0x7f0e0031;
+		public static final int library_PostOffice_licenseId = 0x7f0e0032;
+		public static final int library_PostOffice_repositoryLink = 0x7f0e0033;
 	}
 	public static final class style {
 		public static final int AppTheme = 0x7f0f0006;
