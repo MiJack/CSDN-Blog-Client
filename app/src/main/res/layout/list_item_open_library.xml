@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp">
+
+    <TextView
+        android:id="@+id/library_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Jsoup"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/material_design_color_grey_700"
+        android:textStyle="italic|bold" />
+
+
+    <TextView
+        android:id="@+id/library_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/library_name"
+        android:layout_alignStart="@+id/library_name"
+        android:layout_below="@+id/library_name"
+        android:layout_marginTop="4dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/material_design_color_bluegrey_600" />
+</RelativeLayout>

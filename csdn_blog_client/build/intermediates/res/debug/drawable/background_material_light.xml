@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <solid android:color="@color/background_material_light" />
-    <corners android:radius="2dp" />
-
-</shape><!-- From: file:/Users/r0adkll/Documents/Developer/Android%20Projects/PostOffice/library/src/main/res/drawable/background_material_light.xml --><!-- From: file:/F:/Android_Studio_Project/CSDN-Blog-Client/csdn_blog_client/build/intermediates/exploded-aar/com.r0adkll/postoffice/1.1.9/res/drawable/background_material_light.xml -->

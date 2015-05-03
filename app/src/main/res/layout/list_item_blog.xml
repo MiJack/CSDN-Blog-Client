@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:cardView="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        cardView:cardCornerRadius="4dp"
+        cardView:cardElevation="4px"
+        cardView:cardMaxElevation="2px">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.andexert.library.RippleView xmlns:ripple_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ripple_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/author_icon"
+                android:paddingBottom="16dp"
+                android:paddingLeft="68dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                ripple_view:rv_color="@color/colorPrimaryDark"
+                ripple_view:rv_rippleDuration="@integer/rippleDuration"
+                ripple_view:rv_zoomDuration="@integer/zoomDuration">
+
+                <RelativeLayout
+                    android:id="@+id/blog_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/blog_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/blog_time"
+                        android:layout_marginTop="1px"
+                        android:text="@string/example_title"
+                        android:textColor="#ff5d5d5d"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/blog_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="前天 14:30"
+                        android:textColor="#fff9983b"
+                        android:textSize="8dp" />
+
+                    <TextView
+                        android:id="@+id/blog_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/blog_title"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="@string/example_content"
+                        android:textColor="#ffb2b2b2"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+            </com.andexert.library.RippleView>
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/author_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/loading"
+                app:border_color="#FF000000"
+                app:border_width="0dp" />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
