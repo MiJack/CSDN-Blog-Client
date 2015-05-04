@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn-blog-client-final/build.gradle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/adapter/LibraryAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/adapter/NavigationAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/fragment/BlogPagerFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/model/Category.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/model/Library.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/ui/AboutActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/ui/BaseActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/ui/SettingActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/csdn_blog_client/src/main/java/xyz/mijack/csdn/blog/widget/FullyLinearLayoutManager.java" charset="UTF-8" />
   </component>
 </project>
