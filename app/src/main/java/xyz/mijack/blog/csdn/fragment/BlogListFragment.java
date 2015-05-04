@@ -119,9 +119,7 @@ public class BlogListFragment extends Fragment implements OnRecyclerViewScrollLi
         refreshLayout = (SwipeRefreshLayout) rootView.findViewById(R.id.swipe_refresh_layout);
         //设置下拉刷新的事件
         refreshLayout.setOnRefreshListener(this);
-        //隐藏SmoothProgressBar
-        dismissProgressBar(topProgressBar);
-        dismissProgressBar(bottomProgressBar);
+
         //设置RecyclerView的LayoutManager
         layoutManager = new ABaseLinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         //监听Recycler的滚动，用于控制SwipeRefreshLayout的刷新，
@@ -192,8 +190,9 @@ public class BlogListFragment extends Fragment implements OnRecyclerViewScrollLi
 
     private void loadMorePage() {
         //情况判断，当底部或者顶部正在加载的时候不必加载
-        if (  !isProgressFinish(bottomProgressBar)
-                || !isProgressFinish(topProgressBar)) {
+        if (!isProgressFinish(bottomProgressBar)
+                || !isProgressFinish(topProgressBar)
+                || progressBar.getVisibility() == View.VISIBLE) {
             return;
         }
         //显示加载进度条
@@ -218,6 +217,9 @@ public class BlogListFragment extends Fragment implements OnRecyclerViewScrollLi
     private void resetFragment() {
         order = Order.valueOf(getArguments().getString(Key.Order, Order.index.toString()));
         adapter.changeCursor(category, order);
+        //隐藏SmoothProgressBar
+        dismissProgressBar(topProgressBar);
+        dismissProgressBar(bottomProgressBar);
         page = 1;
         if (adapter.getItemCount() == 0) {
             progressBar.setVisibility(View.VISIBLE);
