@@ -83,6 +83,8 @@ public class BlogListFragment extends Fragment implements OnRecyclerViewScrollLi
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
+            dismissProgressBar(bottomProgressBar);
+            dismissProgressBar(topProgressBar);
             switch (msg.what) {
                 case LOAD_HOME_PAGE:
                     dismissProgressBar(topProgressBar);
@@ -98,8 +100,6 @@ public class BlogListFragment extends Fragment implements OnRecyclerViewScrollLi
                     break;
                 case LOAD_PAGE_WITH_SOME_EXCEPCTION:
                     Util.showSnackBar(getActivity(), "加载异常", 1000);
-                    dismissProgressBar(bottomProgressBar);
-                    dismissProgressBar(topProgressBar);
             }
         }
     };

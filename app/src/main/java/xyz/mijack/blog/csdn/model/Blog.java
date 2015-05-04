@@ -6,7 +6,7 @@ import org.litepal.crud.DataSupport;
 /**
  * Created by MiJack on 2015/4/17.<p/>
  * 共{@link Blog#id}、{@link Blog#authorId}、
- * {@link Blog#blogUrl}、{@link Blog#category}、{@link Blog#title}、{@link Blog#content}、{@link Blog#farovite}等7个属性
+ * {@link Blog#blogUrl}、{@link Blog#category}、{@link Blog#title}、{@link Blog#content}等属性
  */
 public class Blog extends DataSupport {
     private int id;
@@ -16,7 +16,6 @@ public class Blog extends DataSupport {
     private String title;
     private String content;
     private long time;
-    private boolean farovite;
 
     public Blog() {
     }
@@ -69,13 +68,6 @@ public class Blog extends DataSupport {
         this.content = content;
     }
 
-    public boolean isFarovite() {
-        return farovite;
-    }
-
-    public void setFarovite(boolean farovite) {
-        this.farovite = farovite;
-    }
 
     public long getTime() {
         return time;

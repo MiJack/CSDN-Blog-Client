@@ -10,7 +10,6 @@ public class Author extends DataSupport {
     private int id;
     private String authorUrl;
     private String iconUrl;
-    private boolean farovite;
 
     public Author() {
     }
@@ -40,13 +39,7 @@ public class Author extends DataSupport {
         this.iconUrl = iconUrl;
     }
 
-    public boolean isFarovite() {
-        return farovite;
-    }
 
-    public void setFarovite(boolean farovite) {
-        this.farovite = farovite;
-    }
 
     @Override
     public String toString() {

@@ -43,8 +43,7 @@ public class BlogAdapter extends RecyclerViewCursorAdapter<BlogAdapter.BlogHolde
             "author.id",//5
             "author.iconurl",//6
             "author.authorurl",//7
-            "blog.farovite",//8
-            "blog.time"//9
+             "blog.time"//8
     };
     private final Activity activity;
     private final int rippleDuring;
@@ -129,8 +128,7 @@ public class BlogAdapter extends RecyclerViewCursorAdapter<BlogAdapter.BlogHolde
         holder.author.setId(cursor.getInt(5));
         holder.author.setIconUrl(cursor.getString(6));
         holder.author.setAuthorUrl(cursor.getString(7));
-        holder.blog.setFarovite(cursor.getInt(8) == 1);
-        holder.blog.setTime(cursor.getLong(9));
+         holder.blog.setTime(cursor.getLong(8));
         //UI呈现
         holder.content.setText(holder.blog.getContent());
         holder.time.setText(HTMLHandler.dateFormat.format(new Date(holder.blog.getTime())));
