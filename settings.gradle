@@ -1,1 +1,1 @@
-include ':csdn_blog_client', ':csdn-blog-client-final'
+include ':app'

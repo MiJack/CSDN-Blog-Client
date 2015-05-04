@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CSDN-Blog-Client.iml" filepath="$PROJECT_DIR$/CSDN-Blog-Client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csdn-blog-client-final/csdn-blog-client-final.iml" filepath="$PROJECT_DIR$/csdn-blog-client-final/csdn-blog-client-final.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csdn_blog_client/csdn_blog_client.iml" filepath="$PROJECT_DIR$/csdn_blog_client/csdn_blog_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSDN-Blog-Client-Final.iml" filepath="$PROJECT_DIR$/CSDN-Blog-Client-Final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
