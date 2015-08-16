@@ -288,7 +288,7 @@ public class ImageLoader {
                     view.setImageBitmap(bitmap);
                 }
             }
-			taskMap.remove(url,this);
+            taskMap.remove(imageUrl, this);
         }
 
     }
